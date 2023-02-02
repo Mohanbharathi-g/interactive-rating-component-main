@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Rating component</title>
+  </head>
+
+  <body>
+    <div class="main-card-container" id="main">
+      <div class="logo-container">
+        <img src="./images/icon-star.svg" alt="" class="image" />
+      </div>
+      <div class="discription-container">
+        <h1 class="title">How did we do?</h1>
+        <p class="small-para">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <div class="button-container">
+        <input type="button" class="btn-rating" id="btn-rating " value="1" />
+        <input type="button" class="btn-rating" id="btn-rating" value="2" />
+        <input type="button" class="btn-rating" id="btn-rating" value="3" />
+        <input type="button" class="btn-rating" id="btn-rating" value="4" />
+        <input type="button" class="btn-rating" id="btn-rating" value="5" />
+      </div>
+      <div class="submit-button">
+        <button class="btn-submit" id="btn-submit">submit</button>
+      </div>
+    </div>
+    <div class="hidden-card-container" id="final">
+      <div class="image-container">
+        <img src="./images/illustration-thank-you.svg" alt="" class="image-2" />
+      </div>
+      <div class="result-container">
+        <p class="message">You selected <span id="message">4</span> out of 5</p>
+      </div>
+      <div class="detail-container">
+        <h1 class="title">Thank you!</h1>
+        <p class="small-para">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+      <button class="btn-reset" id="btn-reset">ok</button>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
